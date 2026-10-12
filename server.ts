@@ -5143,13 +5143,7 @@ It occurs primarily inside the chloroplasts using the green pigment chlorophyll,
   }
 
   // Clean, direct English response (ZERO templates, ZERO "Keeping your system modular")
-  return `I understand your question: **"${cleanMsg.slice(0, 120)}"**.
-
-Here is a direct answer to your query:
-- Focus on addressing the specific requirement cleanly and directly.
-- Feel free to ask any follow-up question or specify additional details!`;
-}
-
+  return `${cleanMsg}`;
 async function executeAutonomousTurn(input: {
   message: string;
   intent: ExecutionIntent;
