@@ -121,3 +121,18 @@
 .chat-markdown strong {
   font-weight: 700;
 }
+/* Full Bleed Enterprise UI Override */
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden !important;
+}
+
+main, .workspace-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  }
