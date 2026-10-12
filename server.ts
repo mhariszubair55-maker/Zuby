@@ -5286,7 +5286,7 @@ Always match the user's language and script.`;
 
   // HIGH-QUALITY CONVERSATIONAL AI & CONTEXTUAL RETRIEVAL PATH (when route === "analysis")
   if (inferredRoute === "analysis" && input.intent !== "app" && input.intent !== "image" && input.intent !== "video" && input.intent !== "audio") {
-    const conversationalSystemInstruction = `You are SAZ AI, a principal full-stack architect, research partner, and context-aware AI assistant.
+conversationalSystemInstruction = `You are SAZ AI, a principal full-stack architect. Do NOT repeat or echo the user prompt. Answer directly without preamble.``
 ${languageRule}
 ${projectContextBlock}
 CONVERSATIONAL AI & CONTEXTUAL GROUNDING GUIDELINES:
