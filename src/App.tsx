@@ -1779,13 +1779,9 @@ function buildClientFallbackExecution(
         reply: `Aap ke sawal **"${cleanPrompt.slice(0, 100)}"** ke hawale se main aap ki poori madad ke liye hazir hoon. Aap mazeed tafseelat poochein ya agla sawal karein.`,
       };
     }
-
-    // Clean, direct English response
-    return {
-      reply: `I understand your question: **"${cleanPrompt.slice(0, 120)}"**.\n\nFeel free to ask any follow-up question or specify additional details!`,
-    };
-  }
-
+return {
+            reply: cleanMsg,
+        };
   const shortTitle =
     prompt
       .replace(/^(build|create|make|generate|design|launch)\s+(a|an|the)?\s*/i, '')
