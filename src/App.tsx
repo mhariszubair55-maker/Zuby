@@ -1765,23 +1765,11 @@ function buildClientFallbackExecution(
       };
     }
 
-    // Natural Urdu responses
-    if (/[\u0600-\u06FF]/.test(cleanPrompt)) {
-      return {
-        reply: `آپ کا سوال **"${cleanPrompt.slice(0, 100)}"** موصول ہوا ہے۔ میں آپ کی رہنمائی کے لیے تیار ہوں۔ آپ مزید تفصیلات یا کوئی بھی سوال پوچھ سکتے ہیں۔`,
-      };
-    }
-
-    // Natural Roman Urdu responses
-    const isRomanUrdu = /\b(karo|karein|batao|bataiye|hai|hain|nahi|mein|aur|aap|yeh|woh|karna|chahiye|mujhe|hum)\b/i.test(lower);
-    if (isRomanUrdu) {
-      return {
-        reply: `Aap ke sawal **"${cleanPrompt.slice(0, 100)}"** ke hawale se main aap ki poori madad ke liye hazir hoon. Aap mazeed tafseelat poochein ya agla sawal karein.`,
-      };
-    }
-return {
-            reply: cleanMsg,
-        };
+  // Direct clean response without any echo
+    return {
+      reply: cleanMsg,
+    };
+    
   const shortTitle =
     prompt
       .replace(/^(build|create|make|generate|design|launch)\s+(a|an|the)?\s*/i, '')
