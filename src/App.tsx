@@ -8967,4 +8967,3 @@ function MediaStudioCard({
   );
 }
 }
-}
