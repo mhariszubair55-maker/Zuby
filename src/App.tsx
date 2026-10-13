@@ -381,7 +381,7 @@ export interface AppRecord {
   value: string;
   createdAt: string;
 }
-
+{
 export default function App() {
   const [records, setRecords] = useState<AppRecord[]>([]);
   const [query, setQuery] = useState('');
