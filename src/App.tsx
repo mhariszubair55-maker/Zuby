@@ -1764,11 +1764,6 @@ function buildClientFallbackExecution(
         reply: `**Photosynthesis** is the biological process by which green plants, algae, and certain bacteria convert sunlight, water ($H_2O$), and carbon dioxide ($CO_2$) into oxygen ($O_2$) and chemical energy in the form of glucose ($C_6H_{12}O_6$).\n\n**General Chemical Equation:**\n$$6CO_2 + 6H_2O + \\text{Sunlight} \\rightarrow C_6H_{12}O_6 + 6O_2$$\n\nIt occurs primarily inside chloroplasts using chlorophyll, producing oxygen and sustaining life on Earth.`,
       };
     }
-
-  // Direct clean response without any echo
-    return {
-      reply: cleanMsg,
-    };
     
   const shortTitle =
     prompt
