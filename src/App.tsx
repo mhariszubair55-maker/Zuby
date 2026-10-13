@@ -1767,8 +1767,10 @@ function buildClientFallbackExecution(
 
     // Direct clean response without any echo
     return {
-      reply: 'How can I help you today? Feel free to ask a question or describe what you would like me to build.',
-    };
+    reply: cleanPrompt 
+      ? `Main SAZ AI hoon! Aap ne poocha: "${cleanPrompt}". Main aapki coding, UI design aur projects banane mein madad kar sakta hoon.` 
+      : 'How can I help you today? Feel free to ask a question or describe what you would like me to build.'
+  };
   }
 
   const shortTitle =
